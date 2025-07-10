@@ -1,4 +1,4 @@
-package com.example.bankapplication.model;
+package com.example.bankapplication.enums;
 
 public enum OperationType {
 

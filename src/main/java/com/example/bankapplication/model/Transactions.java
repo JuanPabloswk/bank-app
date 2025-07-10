@@ -1,5 +1,6 @@
 package com.example.bankapplication.model;
 
+import com.example.bankapplication.enums.OperationType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,6 +15,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Inheritance(strategy = InheritanceType.JOINED)
+@Table(name = "transaction")
 public class Transactions {
 
     @Id

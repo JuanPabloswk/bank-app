@@ -7,6 +7,6 @@ import java.util.Optional;
 
 public interface ClientRepository extends JpaRepository<Client, Long> {
 
-    Optional<Client> findByIdentificationNumber(String identificationNumber);
-    Optional<Client> findByClientNames(String names);
+    Optional<Client> findByNames(String names);
+    Optional<Client> findByClientId(Long clientId);
 }

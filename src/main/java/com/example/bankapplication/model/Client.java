@@ -15,6 +15,7 @@ import java.util.List;
 @SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "client")
 public class Client {
 
     @Id

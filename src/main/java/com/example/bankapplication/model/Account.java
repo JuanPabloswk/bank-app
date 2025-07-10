@@ -1,5 +1,8 @@
 package com.example.bankapplication.model;
 
+import com.example.bankapplication.enums.AccountStatus;
+import com.example.bankapplication.enums.AccountType;
+import com.example.bankapplication.enums.ExemptGMF;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -28,6 +31,10 @@ public class Account {
     @Enumerated(EnumType.STRING)
     @Column(name = "account_status", nullable = false)
     private AccountStatus accountStatus;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "account_type", nullable = false)
+    private AccountType accountType;
 
     @Column(name = "balance", nullable = false)
     private double balance = 0;
